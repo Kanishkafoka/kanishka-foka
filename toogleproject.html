@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tooglehead</title>
+    <!-- <link rel="stylesheet" href="./toogleproject.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css
+    ">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+    <style>
+      .toimg{
+    height: 3em;
+    width: 6em;
+    margin-right: 17em;
+}
+.searchpng{
+    background-color: blue;
+    margin-right: 2em;
+    width: 2em;
+    height: 2em;
+}
+.enrolment-btn {
+    --bs-btn-padding-y: .25rem;
+    --bs-btn-padding-x: .5rem;
+    --bs-btn-font-size: .75rem;
+    background-color: white;
+    color: blue;
+    margin-left: 2em; 
+    width: 6em;
+  }
+.container-fluid{
+    background-color: blue;
+    padding: 1em;
+    margin: 1em;
+    margin-right: 5em;
+}
+.navbar-nav .btn {
+    margin-right: 3em;
+    background-color: transparent;
+  }
+.carousel-inner{
+    height: 30em;
+}
+#caroosel1 {
+    display: flex;
+    
+}
+#caroosel1 img{
+    height: 30em;
+}
+#caroosel1 h1{
+    padding: 1em;
+}
+#caroosel1 p{
+    padding: 2em;
+    font-size: 20px;
+}
+#caroosel1 button{
+    font-size: 20px;
+    background-color: blue;
+    font-weight: bolder;
+}
+.upcoming{
+    display: flex;
+    margin-top: 6em;
+    margin-left:7em;
+    
+}
+.upcoming big{
+    font-size: 20px;
+    font-weight: bolder;
+}
+.upcoming2 {
+    display: flex;
+    margin-left: 6em;
+}
+
+.upcoming2 img{
+    width: 4em;
+    height: 4em;
+}
+
+.cardd{
+    display: flex;
+    margin-top: 5em;
+    background-color: transparent;
+
+}
+.card{
+    margin-left: 2em;
+    
+}
+.statistics-container {
+    text-align: center;
+    display: flex;
+    background-color: rgb(233, 233, 233);
+    margin-top: 4em;
+  }
+
+.statistic {
+    font-size: 2em;
+    margin: 20px;
+    border: 2px solid transparent;
+    display: inline-block;
+    margin-top: 4em;
+    
+  }
+  .faq{
+    margin-top: 10em;
+    text-align: left;
+    margin-left: 2em;
+  }
+  .faq h1{
+    font-weight: bolder;
+    color: blue;
+}
+
+.sub{
+    margin-top: 10em;
+    text-align: left;
+    margin-left: 2em;
+    /* display: flex; */
+}
+
+.sub h1{
+    font-weight: bolder;
+    color: blue;
+}
+.sub button{
+    background-color: blue;
+    color: black;
+    font-weight: bolder;
+}
+.hand{
+    margin-left: 40em;
+}
+
+footer img{
+    width: 2em;
+    
+}
+footer{
+    display: flex;
+    /* margin-left: 5em; */
+    border: 2px solid black;
+    background-color: rgb(133, 133, 182);
+    padding: 7em;
+}
+.contact{
+    margin-left: 5em;
+}
+.head{
+    margin-left: 6em;
+}
+.follow{
+    margin-left: 7em;
+}
+
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+@media (max-width: 768px) {
+    .toimg {
+        margin-right: 0; /* Adjust as needed */
+    }
+
+    .navbar-nav .btn {
+        margin-right: 0; /* Adjust as needed */
+    }
+
+    .container-fluid {
+        margin-right: 0; /* Adjust as needed */
+    }
+
+    .carousel-inner {
+        height: 15em; /* Adjust as needed */
+    }
+
+    #caroosel1 h1,
+    #caroosel1 p {
+        padding: 1em;
+    }
+
+    #caroosel1 button {
+        font-size: 16px; /* Adjust as needed */
+    }
+
+    .upcoming {
+        margin-top: 2em;
+        margin-left: 1em;
+    }
+
+    .upcoming big {
+        font-size: 16px; /* Adjust as needed */
+    }
+
+    .upcoming2 {
+        margin-left: 0;
+    }
+
+    .upcoming2 img {
+        width: 3em;
+        height: 3em;
+    }
+
+    .cardd {
+        margin-top: 2em;
+    }
+
+    .card {
+        width: 100%; /* Full width for cards on smaller screens */
+        margin-bottom: 1em;
+    }
+
+    .statistics-container {
+        margin-top: 2em;
+    }
+
+    .statistic {
+        font-size: 1.5em;
+        margin-top: 1em;
+    }
+
+    .faq {
+        margin-top: 2em;
+    }
+
+    .faq h1 {
+        font-size: 20px; /* Adjust as needed */
+    }
+
+    .sub {
+        margin-top: 2em;
+    }
+
+    .sub h1 {
+        font-size: 20px; /* Adjust as needed */
+    }
+
+    .sub button {
+        font-size: 16px; /* Adjust as needed */
+    }
+
+    .hand {
+        margin-left: 0;
+    }
+
+    footer {
+        padding: 1em;
+    }
+
+    .contact,
+    .head,
+    .follow {
+        margin-left: 0;
+    }
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: blue;" >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="https://jobs.socialsamosa.com/wp-content/uploads/2018/10/togglehead-sqr-logo.png" class="toimg"></a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  Qualification
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  Oraganization
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+
+
+              <li class="nav-item dropdown">
+                <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  Research & Analysis
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+
+
+              <li class="nav-item dropdown">
+                <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  Lorem
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  lorem
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+
+              <img src="https://icons.iconarchive.com/icons/colebemis/feather/48/search-icon.png" class="searchpng">
+
+              <button type="button" class="btn btn-primary"
+        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem; background-color: white; color: blue;">
+            Enrolment
+</button>
+
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quos voluptatibus, ipsam rerum exercitationem velit aspernatur impedit nulla assumenda repudiandae!  </p> <img src="" alt=""></div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+          ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+
+      <div class="upcoming">
+        <div class="upcoming1">
+            <h1>Upcoming <br> Examinations</h1>
+            <p> <small> about the examination & registeration</small></p> <hr>
+        </div> 
+        <div class="upcoming2"> 
+            <img src="https://icons.iconarchive.com/icons/pictogrammers/material-light/256/calendar-icon.png" alt=""> 
+            <p><big>02th October 2014 </big>  <br> <small>Level 1 exam</small></p>
+        </div>
+
+        <div class="upcoming2"> 
+            <img src="https://icons.iconarchive.com/icons/pictogrammers/material-light/256/calendar-icon.png" alt=""> 
+            <p><big>02th October 2014 </big>  <br> <small>Level 1 exam</small></p>
+        </div>
+
+        <div class="upcoming2"> 
+            <img src="https://icons.iconarchive.com/icons/pictogrammers/material-light/256/calendar-icon.png" alt=""> 
+            <p><big>02th October 2014 </big> <br> <small>Level 1 exam</small></p>
+        </div>
+
+      </div>
+
+
+      <div class="cardd">
+        <div class="card" style="width: 18rem; background-color: rgb(130, 130, 226);">
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary" style="background-color: transparent; color: black; font-weight: bolder;">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem; background-color: rgb(130, 130, 226);">
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;background-color: rgb(130, 130, 226);">
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary" style="background-color: transparent; color: black; font-weight: bolder;">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem; background-color: rgb(130, 130, 226);">
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary" style="background-color: transparent; color: black; font-weight: bolder;">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem; background-color: rgb(130, 130, 226);">
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary" style="background-color: transparent; color: black; font-weight: bolder;">Go somewhere</a>
+            </div>
+          </div>
+      </div>
+
+
+      <div class="statistics-container">
+        <div class="statistic" id="statistic1"> 0 <span class="info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, officiis?</span> </div>
+        <div class="statistic" id="statistic2">0 <span class="info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, officiis?</span></div>
+        <div class="statistic" id="statistic3">0 <span class="info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, officiis?</span></div>
+      
+      </div>
+
+
+
+      <div class="faq">
+        <h1>FAQ</h1>
+        <div class="faq-item">
+          <div class="question" onclick="toggleAnswer('answer1')">
+            <span class="toggle-icon">+</span>how does the investor gain access to MF Utility?
+          </div>
+          <div class="faq-answer" id="answer1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde error nemo perspiciatis ut quam, excepturi adipisci culpa ipsa at    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque blanditiis deserunt distinctio. Sequi cupiditate doloribus.  </div>
+        </div>
+        <hr>
+    
+        <div class="faq-item">
+          <div class="question" onclick="toggleAnswer('answer2')">
+            <span class="toggle-icon">+</span> Will investor be able to get multiple Account?
+          </div>
+          
+        </div>
+    
+        <!-- Add more FAQ items as needed -->
+      </div>
+
+
+      <div class="sub">
+        <h1>Subscribe</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sed error <br> veritatis tempore assumenda perferendis facere itaque doloribus, aspernatur autem voluptatum culpa eveniet, <br> corporis perspiciatis nostrum delectus pariatur quos. Deleniti?</p>
+
+        <input type="email" placeholder="Enter Your Email-ID" name="" id="" ><button>Subscribe Now</button>
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRPHZHmGPTJPEnFBJvOrYFzWQXCzNEb14o9afnQfrT2Fo8E8Q3H3rLxKUXb3zGCD-C1Fc&usqp=CAU" class="hand">
+      </div>
+    
+      <div>
+        <footer>
+            <div class="contact">
+                <h3>contact us</h3>
+                <p>Address: Lorem ipsum dolor sit amet consectetur adipisicing  <br>elit. Ad, ea! Lorem ipsum dolor sit amet.
+                </p>
+            </div>
+
+            <div class="follow">
+                <h3>Follow Us</h3>
+                <img src="https://icons.iconarchive.com/icons/icons8/ios7/256/Logos-Instagram-icon.png" alt="">
+                <img src="https://icons.iconarchive.com/icons/iconsmind/outline/256/Facebook-icon.png" alt="">
+                <img src="https://icons.iconarchive.com/icons/arturo-wibawa/akar/256/snapchat-icon.png" alt="">
+                <img src="https://icons.iconarchive.com/icons/arturo-wibawa/akar/256/snapchat-icon.png" alt="">
+            </div>
+
+
+            <div class="head">
+                <h3>Head Office</h3>
+                <img src="https://icons.iconarchive.com/icons/steve/zondicons/256/Location-icon.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil.</p>
+                <img src="https://icons.iconarchive.com/icons/steve/zondicons/256/Time-icon.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor accusantium</p>
+                <img src="https://icons.iconarchive.com/icons/microsoft/fluentui-emoji-mono/256/Train-icon.png" alt="">
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </footer>
+      </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js
+    "></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        function animateStatistic(target, elementId, info,duration) {
+          $({ Counter: 0 }).animate({ Counter: target }, {
+            duration: duration,
+            easing: 'swing',
+            step: function () {
+                $(elementId).html(Math.ceil(this.Counter) + ' <span class="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, officiis?">' + info + '</span>');
+            }
+          });
+        }
+
+        
+    
+       
+        animateStatistic(123, '#statistic1', '+<br/> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, officiis?',2000); 
+        animateStatistic(250, '#statistic2',' +<br/>  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, officiis?', 2000); 
+        animateStatistic(500, '#statistic3', ' + <br/> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, officiis?',2000); 
+
+
+
+
+        function toggleAnswer(answerId) {
+      var answer = document.getElementById(answerId);
+      var toggleIcon = answer.previousElementSibling.querySelector('.toggle-icon');
+
+      if (answer.style.display === 'block') {
+        answer.style.display = 'none';
+        toggleIcon.innerText = '+';
+      } else {
+        // Hide all answers before showing the selected one
+        hideAllAnswers();
+        answer.style.display = 'block';
+        toggleIcon.innerText = '-';
+      }
+    }
+
+    function hideAllAnswers() {
+      var answers = document.querySelectorAll('.faq-answer');
+      var toggleIcons = document.querySelectorAll('.toggle-icon');
+
+      answers.forEach(function (answer) {
+        answer.style.display = 'none';
+      });
+
+      toggleIcons.forEach(function (toggleIcon) {
+        toggleIcon.innerText = '+';
+      });
+    }
+    
+        
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+      
+        const swiper = new Swiper()
+      </script>
+      </script>
+</body>
+</html>
